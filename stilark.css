@@ -1,7 +1,7 @@
 body{
-    background-color: rgb(38, 182, 132);
+    background-color: #b86ac5;
 } 
 
 h1 {
-    color: rgb(42, 204, 207);
+    color: oklab(84.32300000000001% -0.03173 0.06626);
 }

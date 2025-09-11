@@ -1,5 +1,13 @@
-def f(x):
-    return(3 * x + 2)
-
-x=float(input("skriv inn et tall"))
-print(f(x))
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Beste Ninjago superskurker</title>
+</head>
+<body> 
+    <h1>Hvilken superskurk fra Ninjago er best?</h1>
+    <p> Det er mye diskusjon når vi snakker om de beste superskurkene i Ninjago. Mange mener det er Garmadon eller Overlord, ettersom det er to superskurker som har vært med fra tidenes morgen. Den første sesongen de to var med i var sesong 2 og den siste var sesong 16! Wow utrolig!</p>
+    <p> Likevell er det mange med andre meninger, for eksmepel at Morror fra sesong 5 er den beste. Dette er nødvedighvis ikke feil, akuratt som med meningene om Garmadon og Overlord, er grunnen ofte ikke 'helt' til stedet. Ofte skyldes det fordi de er tøffe, synes synd på de eller har mye 'aura'. jeg mener at dette ikke er et verdi argument for hvorfor noen skurker er bedre enn andre.</P>
+    <p> Derfor skal jeg i dag legge vekk mine egne biased meninger, og gå ut i fra andre faktorer </p>
+</body>
+</html>
