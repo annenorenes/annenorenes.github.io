@@ -1,0 +1,5 @@
+def f(x):
+    return(3 * x + 2)
+
+x=float(input("skriv inn et tall"))
+print(f(x))
