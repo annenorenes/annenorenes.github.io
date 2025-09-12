@@ -1,7 +1,13 @@
 body{
-    background-color: #b86ac5;
+    background-color: #ffffff;
 } 
 
+#blue{
+    font-size: 20px;
+    font-weight: 600;
+    color: aqua;
+}
+
 h1 {
-    color: oklab(84.32300000000001% -0.03173 0.06626);
+    color: #000000;
 }
