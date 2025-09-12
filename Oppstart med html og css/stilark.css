@@ -1,0 +1,33 @@
+body{
+    background-color: #f22c2c;
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+#hoved{
+    width: 60%;
+    margin: 50px auto;
+    padding: 400px;
+    background-color: blueviolet;
+
+}
+
+a {
+    color: #000000;
+    text-decoration:double;
+}
+
+a:hover {
+    color: #4343db;
+}
+
+a:active{
+    text-decoration: rgb(204, 216, 70);
+}
+
+a.focus{
+    color: aquamarine;
+}
