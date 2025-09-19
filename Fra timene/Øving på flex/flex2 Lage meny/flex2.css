@@ -1,0 +1,31 @@
+html, body{
+    height: 100;
+    margin: 0;
+    padding: 0; 
+}
+
+
+nav { 
+    background-color: rgb(66, 108, 236);
+    padding: 2rem;
+
+    display: flex;
+    justify-content: left;
+    gap: 5rem; 
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: 1px solid black;
+    padding: 0.5rem 1rem;
+    background-color: rgb(61, 85, 189);
+}
+
+p {
+    padding: 1rem;
+}
+
+
