@@ -15,9 +15,25 @@
   border: 1px solid black; 
 }
 
-#hoved :nth-child(odd) {
-    background-color: pink;
-    /* border: 2px solid pink; */
-
+/* Sjakkmønster: sort og hvit */
+#hoved > div:nth-child(n) {
+  background-color: white;
 }
 
+#hoved > div:nth-child(odd) {
+  background-color: black;
+}
+
+
+#hoved > div:nth-child(8n+1){
+#hoved > div:nth-child(8n+3),
+#hoved > div:nth-child(8n+5),
+#hoved > div:nth-child(8n+7) 
+  background-color: white;
+}
+
+#hoved > div:nth-child(8n+2),
+#hoved > div:nth-child(8n+4),
+#hoved > div:nth-child(8n+6),
+#hoved > div:nth-child(8n+8) {
+  background-color: black;
