@@ -1,17 +1,21 @@
 
 #hoved{
-    width: 600px;
-    height: 400px;
+    width: 1500px;
+    height: 2000px;
+    border-radius: 250px;
     display: grid;
-    gap: 10px; 
+    gap: 20px; 
     background-color: pink;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
     
-    grid-template-areas: "t t t t t "
-    "v . h h h"
-    "v . h h h"; 
-
+    grid-template-areas: 
+    "v v v v v h h h h h h"
+    "v v v v v h h h h h h"
+    "v v v v v h h h h h h"
+    "v v v v v h h h h h h"
+    "v v v v v h h h h h h"
+    "v v v v v h h h h h h";
 }
 
 #hoved > div {
@@ -19,6 +23,8 @@
     border: 1px purple; 
 
 }
-.topp    { grid-area : t; }
-.venstre { grid-area : v; }
-.hoyre   { grid-area : h; }
+
+
+/* .topp    { grid-area : t; } */
+.hoyre { grid-area : h; }
+.venstre   { grid-area : v; }
