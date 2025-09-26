@@ -5,7 +5,7 @@ html, body{
 
 body { 
     padding: 20px;
-    background-color: aquamarine;
+    background-color: rgb(246, 179, 128);
 
     display: flex;
     justify-content: center;
@@ -15,15 +15,15 @@ body {
 }
 
 article { 
-    width: 200px;
-    height: 200px;
-    background-color: blueviolet;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(172, 95, 13);
 
 }
 
 article h1 { 
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 article figure img {
@@ -31,10 +31,12 @@ article figure img {
     width: 100%;
 }
 
+
 button {
     padding: 0.5rem 1rem;
     font-size: 1rem;
-    cursor: pointer;
-    background-color: lightblue;
-    margin-top: 1rem;
+    cursor: pointer; 
+    border-color: pink;
+    background-color: rgb(255, 183, 241);
+    margin-top: 2rem;
 }

@@ -1,0 +1,32 @@
+
+#hoved{
+    width: 1500px;
+    height: 2000px;
+    border-radius: 0px;
+    display: grid;
+    gap: 20px; 
+    background-color: rgb(219, 185, 185);
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    
+    grid-template-areas: 
+    "t t t t t t v v v v"
+    "t t t t t t v v v v"
+    "t t t t t t v v v v"
+    "t t t t t t v v v v"; 
+    
+}
+
+
+#hoved > div {
+    background-color: rgb(196, 126, 149);
+    border: 1px purple;
+    border-radius: 25px; 
+
+}
+
+
+.topp    { grid-area : t; }
+.hoyre { grid-area : h; }
+.venstre   { grid-area : v; }
+.a {grid-area: a;}

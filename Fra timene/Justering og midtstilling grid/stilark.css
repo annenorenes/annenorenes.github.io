@@ -1,0 +1,22 @@
+#bildegrid { 
+    height: 350px;
+    display: grid;
+    gap: 20px;
+    /* background-color: rgb(253, 178, 151); */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 250px);
+    /* justify-content: start;
+    align-items: end; */
+    
+}
+
+#bildegrid < img {
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  justify-self: center;
+  align-self: center;
+  background-color: #fa7ac9;
+  object-fit: cover;
+}
+
