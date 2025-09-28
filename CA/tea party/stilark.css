@@ -1,26 +1,39 @@
-html {
-
-}
-
-body{
+html, body {
     font-family: Helvetica;
     font-size: 22px;
-    background-color: beige;
+    background-color: #f0d7b1;
+    height: 1000px;
+    margin: 0;
+    padding: 0;
 }
 
-
-
-nav {
+header nav {
     height: 69px;
-    background-color: #70f8ff
+    background-color: aqua;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    
 }
 
-nav a {
-    text-decoration: underline;
-    color:#8d7367;
+header nav img {
+    height: 69px;
+}
 
-    display: inline-flex; 
-    flex-direction: row;
-    justify-content: left; 
-    gap: 5rem;
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.links a{
+    color: rgb(254, 254, 254);
+    font-family: fantasy;
+}
+
+.links a:hover{
+    color: #55bdba;
 }
