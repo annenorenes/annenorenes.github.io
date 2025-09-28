@@ -1,0 +1,26 @@
+html {
+
+}
+
+body{
+    font-family: Helvetica;
+    font-size: 22px;
+    background-color: beige;
+}
+
+
+
+nav {
+    height: 69px;
+    background-color: #70f8ff
+}
+
+nav a {
+    text-decoration: underline;
+    color:#8d7367;
+
+    display: inline-flex; 
+    flex-direction: row;
+    justify-content: left; 
+    gap: 5rem;
+}
