@@ -9,7 +9,7 @@ html, body {
 
 header nav {
     height: 69px;
-    background-color: aqua;
+    background-color: rgb(184, 101, 37);
 
     display: flex;
     justify-content: space-between;
@@ -31,9 +31,44 @@ header nav img {
 
 .links a{
     color: rgb(254, 254, 254);
-    font-family: fantasy;
+    font-family: cursive;
+    border-color: white;
+    border-radius: 15%;
 }
 
 .links a:hover{
-    color: #55bdba;
+    color: #ff7433;
+}
+
+
+.framside{ 
+    padding-top: 50px;
+
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.headline{
+
+    display: flex;
+    justify-content: center;
+    margin-top: 100px; 
+}
+
+main h2{
+    padding-left: 350px;
+    padding-top: 15px;
+}
+
+.oversikt ul{
+    padding-left: 50px;
+    list-style-type: square;
+    /* margin-top: 50px;
+    background-color: #ff7433; */
+
+}
+
+.oversikt li{
+    padding-left: 480px;
 }
