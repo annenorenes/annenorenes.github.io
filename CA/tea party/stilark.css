@@ -12,7 +12,7 @@ header nav {
     background-color: rgb(184, 101, 37);
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     position: fixed;
@@ -27,19 +27,25 @@ header nav img {
 .links {
     display: flex;
     gap: 20px;
+    justify-content: space-evenly;
 }
 
 .links a{
     color: rgb(254, 254, 254);
-    font-family: cursive;
+    font-family: 'Times New Roman', Times, serif;
     border-color: white;
     border-radius: 15%;
+    font-size: x-large;
 }
 
 .links a:hover{
     color: #ff7433;
 }
 
+button {
+    background-color: rgb(237, 152, 214);
+    border-color: pink;
+}
 
 .framside{ 
     padding-top: 85px;
@@ -80,4 +86,13 @@ main h2{
 .oversikt ul{
     display: inline-block;
     text-align: left;
+}
+
+
+
+
+
+/* for pc */
+@media (max-width: 1440px){
+
 }
