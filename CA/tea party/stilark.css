@@ -1,5 +1,5 @@
 html, body {
-    font-family: Helvetica;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 22px;
     background-color: #f0d7b1;
     height: 1000px;
@@ -42,7 +42,7 @@ header nav img {
 
 
 .framside{ 
-    padding-top: 50px;
+    padding-top: 85px;
 
     display: flex; 
     justify-content: center;
@@ -50,10 +50,22 @@ header nav img {
 }
 
 .headline{
-
     display: flex;
     justify-content: center;
-    margin-top: 100px; 
+
+}
+
+.bilde1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.caption {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main h2{
@@ -61,16 +73,11 @@ main h2{
     padding-top: 15px;
 }
 
-.oversikt ul{
-    outline: greenyellow;
-    padding-left: 50px;
-    list-style-type: square;
-    /* margin-top: 50px;
-    background-color: #ff7433; */
-
+.oversikt {
+    text-align: center;
 }
 
-.oversikt li{
-    outline: greenyellow;
-    padding-left: 480px;
+.oversikt ul{
+    display: inline-block;
+    text-align: left;
 }
