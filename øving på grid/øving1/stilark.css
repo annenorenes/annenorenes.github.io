@@ -4,8 +4,6 @@ html, body{
     background-color: pink;
     margin: 0%;
 
-    /* overflow-x: hidden; 
-    overflow-y: auto;  */
 }
 
 
@@ -17,7 +15,7 @@ nav, main, .sidebar, .boks1, .boks2, .boks3, .boks4, footer {
 .sider {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr; */
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
         "Navbar Navbar Navbar Navbar"
         "sidebar mainbar mainbar mainbar"
@@ -25,11 +23,6 @@ nav, main, .sidebar, .boks1, .boks2, .boks3, .boks4, footer {
         "boks1 boks2 boks3 boks4"
         "boks1 footer footer footer";
     gap: 20px;
-    min-height: 100%;
-    justify-content: center;
-       
-          
-    gap: 20px; 
     height: 100%;
 }
 
@@ -87,36 +80,27 @@ footer{
 
 @media only screen and (max-width: 990px) {
     .sider {
-        display: grid;
-        gap: 10px;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
+        grid-template-columns: 1fr; /* Bare én kolonne */
+        grid-template-rows: auto;   /* Høyden tilpasses automatisk */
         grid-template-areas: 
-            "Navbar  Navbar"
-            "sidebar mainbar"
-            "sidebar mainbar"
-            "boks1   boks2"
-            "boks3   boks4"
-            "footer  footer";
-
-
-            /* "Navbar"
-            "sidebar"
+            "Navbar"
             "mainbar"
+            "sidebar"
             "boks1"
             "boks2"
             "boks3"
             "boks4"
-            "footer"; */
-
-
-
-    
+            "footer";
     }
 
+    nav {
+        font-size: 30px; /* Litt mindre font på mobil */
+    }
 
-
-
+    main {
+        font-size: 14px; 
+    }
 }
+
     
 
