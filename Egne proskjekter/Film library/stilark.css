@@ -1,0 +1,65 @@
+html, body{
+    background-color: #5D64BE
+}
+
+nav {
+    background-color: rgb(144, 213, 252);
+    padding: 2rm;
+    height: 100px;
+
+    display: flex; 
+    justify-content: space-around;
+    gap: 15px;
+    position: fixed;
+    top: 0%; 
+    width: 100%;
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.linker {
+    display: flex;
+    align-items: center;
+    gap: 300px;
+}
+
+.linker a {
+    background-color: #F67964;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: x-large;
+    color:#f54121;
+    text-decoration: none;
+
+}
+
+a:hover{
+    background-color: rgba(11, 162, 250, 0.863);
+}
+
+.overskrift{
+    margin-top: 110px;
+    font-size: xx-large;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.sidebar {
+    justify-content: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-area:
+    "s s"
+    "s s"
+    "s s"
+    "s s";
+}
+
+.sidebar {grid-area: s;background-color: white;}
+
+
