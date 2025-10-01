@@ -12,10 +12,6 @@ nav, main, .sidebar, .boks1, .boks2, .boks3, .boks4, footer {
 
 }
 
-nav, a{
-    background-color: brown;
-}
-
 .sider {
     padding: 10px;
     gap: 20px;
