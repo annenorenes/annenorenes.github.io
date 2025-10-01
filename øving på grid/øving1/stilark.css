@@ -12,6 +12,9 @@ nav, main, .sidebar, .boks1, .boks2, .boks3, .boks4, footer {
 
 }
 
+nav, a{
+    background-color: brown;
+}
 
 .sider {
     padding: 10px;
@@ -40,14 +43,15 @@ main { grid-area: m; background-color: purple;}
 .boks4 {grid-area: g; background-color: rgb(177, 62, 81);}
 footer {grid-area: f; background-color: coral;}
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 400px){
     .sider{
         display: grid;
         gap: 10px;
         grid-template-rows: repeat(2, 1fr);
-        grid-template-rows: repeat(9, 1fr);
+        grid-template-rows: repeat(11, 1fr);
         grid-template-areas:
         "n n"
+        "s s"
         "s s"
         "m m"
         "m m"
@@ -55,6 +59,7 @@ footer {grid-area: f; background-color: coral;}
         "h h"
         "d d"
         "g g"
+        "f f"
         "f f";
 
     }
