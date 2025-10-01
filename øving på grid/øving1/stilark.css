@@ -9,98 +9,56 @@ html, body{
 
 nav, main, .sidebar, .boks1, .boks2, .boks3, .boks4, footer {
     border-radius: 10px;
+
 }
 
 
 .sider {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-        "Navbar Navbar Navbar Navbar"
-        "sidebar mainbar mainbar mainbar"
-        "sidebar mainbar mainbar mainbar"
-        "boks1 boks2 boks3 boks4"
-        "boks1 footer footer footer";
+    padding: 10px;
     gap: 20px;
-    height: 100%;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 
+    "n n n n"
+    "s m m m"
+    "s m m m"
+    "e e h h"
+    "d d g g"
+    "f f f f";
+     
 }
 
-nav {
-    background-color: purple;
-    grid-area: Navbar;
-    
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    font-size: 60px;
-}
+nav { grid-area: n; background-color: yellow;}
+main { grid-area: m; background-color: purple;}
+.sidebar {grid-area: s;background-color: white;}
+.boks1 {grid-area: e; background-color: blue;}
+.boks2 {grid-area: h; background-color: aqua;}
+.boks3 {grid-area: d; background-color: brown;}
+.boks4 {grid-area: g; background-color: rgb(177, 62, 81);}
+footer {grid-area: f; background-color: coral;}
 
-main{
-    background-color: orange;
-    grid-area: mainbar;
-    
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    font-size: 15px;
+@media only screen and (max-width: 900px){
+    .sider{
+        display: grid;
+        gap: 10px;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        grid-template-areas:
+        "n n"
+        "s s"
+        "m m"
+        "m m"
+        "e e"
+        "h h"
+        "d d"
+        "g g"
+        "f f";
 
-}
-
-.sidebar {
-    background-color: rgb(76, 76, 185);
-    grid-area: sidebar;
-}
-
-.boks1{
-    background-color: white;
-    grid-area: boks1;
-}
-
-.boks2 {
-    background-color: green;
-    grid-area: boks2; 
-
-}
-
-.boks3 {
-    background-color: darkorchid;
-    grid-area: boks3;
-}
-
-.boks4{
-    background-color: aqua;
-    grid-area: boks4;
-}
-
-footer{
-    background-color: magenta;
-    grid-area: footer;
-}
-
-@media only screen and (max-width: 990px) {
-    .sider {
-        grid-template-columns: 1fr; /* Bare én kolonne */
-        grid-template-rows: auto;   /* Høyden tilpasses automatisk */
-        grid-template-areas: 
-            "Navbar"
-            "mainbar"
-            "sidebar"
-            "boks1"
-            "boks2"
-            "boks3"
-            "boks4"
-            "footer";
     }
 
-    nav {
-        font-size: 30px; /* Litt mindre font på mobil */
-    }
-
-    main {
-        font-size: 14px; 
-    }
 }
 
-    
 
