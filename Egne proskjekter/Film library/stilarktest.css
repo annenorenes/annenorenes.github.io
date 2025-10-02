@@ -1,5 +1,5 @@
 html, body{
-    background-color: #5D64BE
+    background-color: pink;
 }
 
 nav {
@@ -17,7 +17,7 @@ nav {
 
 div a img{
     height: 100px;
-
+    
 }
 
 .linker {
@@ -39,38 +39,3 @@ div a img{
 a:hover{
     background-color: rgba(11, 162, 250, 0.863);
 }
-
-.overskrift{
-    margin-top: 110px;
-    font-size: xx-large;
-
-    display: flex;
-    justify-content: center;
-
-}
-
-.container {
-    display: grid;
-    grid-template-columns: repeat(4, 217px);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas:
-    "c c c c"
-    "c c c c";
-
-}
-
-.oversikt-bilde {
-    grid-area: c;
-    background-color: rgb(108, 128, 128);
-}
-
-
-.sidebar {
-    grid-area: s;
-    color: rgb(217, 47, 47);
-    background-color: white;
-    border-radius: 10px;
-}
-
-
-
