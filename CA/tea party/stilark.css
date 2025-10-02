@@ -88,8 +88,25 @@ main h2{
     text-align: left;
 }
 
+ul li{
+    color: white;
+}
 
+#første h3 {
+    background-color: rgb(89, 89, 124); 
 
+}
+
+#første p {
+    margin-bottom: 2em;
+}
+
+.førstebilde {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 
 
 /* for pc */

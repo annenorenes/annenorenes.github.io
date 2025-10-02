@@ -1,0 +1,66 @@
+/* Grid-oppsett for layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;        /* To kolonner: hovedinnhold (bredere) og sidebar */
+  grid-template-rows: auto 1fr auto;     /* Rader: header, innhold, footer */
+  grid-template-areas:
+    "header header"
+    "main sidebar"
+    "footer footer";
+  gap: 10px;                             /* Avstand mellom grid-celler */
+}
+
+/* Tilordner grid-områder til elementene */
+.site-header { grid-area: header; }
+.site-main   { grid-area: main; }
+.sidebar     { grid-area: sidebar; }
+.site-footer { grid-area: footer; }
+
+/* Flexbox for navigasjonsmenyen (horisontal layout) */
+.site-header {
+  display: flex;             /* Gjør header til flex-container */
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #cce5ff;
+}
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.main-nav li {
+  margin-left: 15px;
+}
+.main-nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Skalerer bilder til å fylle sin kolonne-bredde */
+.hero img,
+.post img,
+.sidebar img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Enkel styling av innholdsområder */
+.hero, .post, .sidebar, .site-footer {
+  background: #e6e6e6;
+  padding: 10px;
+}
+
+/* Media query: stabler alle grid-områder vertikalt på små skjermer */
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "main"
+      "sidebar"
+      "footer";
+  }
+}
