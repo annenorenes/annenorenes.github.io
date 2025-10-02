@@ -16,6 +16,9 @@
 .sidebar     { grid-area: sidebar; }
 .site-footer { grid-area: footer; }
 
+
+
+
 /* Flexbox for navigasjonsmenyen (horisontal layout) */
 .site-header {
   display: flex;             /* Gjør header til flex-container */
@@ -37,6 +40,9 @@
   text-decoration: none;
   color: #333;
 }
+
+
+
 
 /* Skalerer bilder til å fylle sin kolonne-bredde */
 .hero img,
