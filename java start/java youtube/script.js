@@ -42,3 +42,54 @@ console.log("summen er " + d) //her blir svaret 0, fordi 9 dlet på 3 er 3, og d
 
 // 14 % 3
 // 20 % 4
+
+
+//oppgave 9
+
+
+//let stedsnavn1 = prompt("Skriv inn stedsnavn nr 1: "); //du for opp en 'warning' og blir spurt om å skrive inn et navn
+//let stedsnavn1lengde = stedsnavn1.length;
+
+//console.log(stedsnavn1);
+//console.log(stedsnavn1.length); //tar med mellomrom
+
+//let stedsnavn2 = prompt("Skriv inn stedsnavn nr 2: "); //husk å endre navn
+//let stedsnavn2lengde = stedsnavn2.length; //nå har vi to stedsnavn og to lengder
+
+//let differanse = (stedsnavn1lengde - stedsnavn2lengde)
+//differanse = Math.abs(differanse)
+
+//console.log(differanse);
+
+//document.getElementById("utskrift").innerText = differanse;
+//document.getElementById("utskrift").innerText = "differanse er " + differanse;
+
+
+let frukt = prompt("Hva frukt liker du best av banan og eple: ")
+
+switch (frukt) {
+    case "banan":
+        console.log("Dette er en banan.");
+        break;
+    case "eple":
+        console.log("Dette er et eple.");
+        break;
+    default:
+        console.log("Ukjent frukt.");
+}
+
+for (let i = 0; i < 5; i++) {
+    console.log("Teller: " + i);
+}
+
+
+//oppgave 10 3B 
+
+let poeng = 50; 
+poeng += 10; 
+
+let tekst1 = "Java";
+let tekst2 = "Script";
+let sum1 = tekst1 + tekst2; 
+console.log(sum1);
+
