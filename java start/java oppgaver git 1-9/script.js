@@ -33,9 +33,25 @@ let adresse1 = ("Gaten er " + gate + ", husnummeret er" + husnr + ", oppgang " +
 console.log(adresse);
 console.log(adresse1);
 
+
 //oppgang 7 
 
-let verdi = prompt("Skriv inn et tall");
-let verdi1 = prompt("Skriv inn et annet tall");
-let produktet = (verdi * verdi1);
-console.log("Resultatet av " + verdi + " og " + verdi1 + " er " + produktet);
+// let verdi = prompt("Skriv inn et tall");
+// let verdi1 = prompt("Skriv inn et annet tall");
+// let produktet = (verdi * verdi1);
+// console.log("Resultatet av " + verdi + " og " + verdi1 + " er " + produktet);
+
+
+//oppgave 8 
+
+// let binTall = prompt("Skriv inn et binærtall");
+// desimalTall = parseInt(binTall, 2)
+// console.log("Det binære tallet " + binTall + " er " + desimalTall + " i desimaltall");
+
+
+//oppgave 9 statsnavn med brukerinput 
+
+let statsnavn1 = prompt("Skriv inn et stadtsnavn")
+let statsnavn2 = prompt("Skriv inn et annet stadstnavn")
+
+
