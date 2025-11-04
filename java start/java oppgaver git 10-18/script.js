@@ -1,62 +1,62 @@
 //oppgave 13 førerkort 
 
-let alder = 23; 
+// let alder = 23; 
 
-if (alder < 16){
-    console.log("Du er for ung");
-}
+// if (alder < 16){
+//     console.log("Du er for ung");
+// }
 
-else if (alder < 18) {
-    console.log("Du har muligheten til å kjøre moped");
-}
+// else if (alder < 18) {
+//     console.log("Du har muligheten til å kjøre moped");
+// }
 
-else if (alder < 21) {
-    console.log("Du har mulighet til å kjøre moped og bil");
-}
+// else if (alder < 21) {
+//     console.log("Du har mulighet til å kjøre moped og bil");
+// }
 
-else if (alder < 24) {
-    console.log("Du har muligheten til å kjøre moped, bil og lastebil");
-}
+// else if (alder < 24) {
+//     console.log("Du har muligheten til å kjøre moped, bil og lastebil");
+// }
 
-else {
-    console.log("Du kan kjøre moped, bil, lastebil og buss");
-}
+// else {
+//     console.log("Du kan kjøre moped, bil, lastebil og buss");
+// }
 
 //oppgave 14 gjettespill 
 //versjon 1 
 
-let randomTall = getRandomIntInclusive(1,10);
+// let randomTall = getRandomIntInclusive(1,10);
 
-let brukerTall = prompt("Prøv å gjett tallet maskinen har valgt fra 1-10")
-brukerTall = parseInt(brukerTall)
+// let brukerTall = prompt("Prøv å gjett tallet maskinen har valgt fra 1-10")
+// brukerTall = parseInt(brukerTall)
 
-if (randomTall === brukerTall){
-    console.log("Du har gjettet riktig tall!");
-}
+// if (randomTall === brukerTall){
+//     console.log("Du har gjettet riktig tall!");
+// }
 
-else {
-    console.log("Du har gjettet feil")
-    if (randomTall < brukerTall){
-        console.log("Du gjettet for høyt, prøv igjen");
-        brukerTall2 = prompt("Prøv igjen");
-        console.log(brukerTall2);
-    }
+// else {
+//     console.log("Du har gjettet feil")
+//     if (randomTall < brukerTall){
+//         console.log("Du gjettet for høyt, prøv igjen");
+//         brukerTall2 = prompt("Prøv igjen");
+//         console.log(brukerTall2);
+//     }
 
-    else (randomTall > brukerTall);{
-        console.log("For lavt prøv igjen");
-        brukerTall2 = prompt("Prøv igjen");
-        console.log(brukerTall2);
+//     else (randomTall > brukerTall);{
+//         console.log("For lavt prøv igjen");
+//         brukerTall2 = prompt("Prøv igjen");
+//         console.log(brukerTall2);
 
-    }
-}
+//     }
+// }
 
 
 
-function getRandomIntInclusive(min, max) {
-  const minCeiled = Math.ceil(min);
-  const maxFloored = Math.floor(max);
-  return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled); // The maximum is inclusive and the minimum is inclusive
-}
+// function getRandomIntInclusive(min, max) {
+//   const minCeiled = Math.ceil(min);
+//   const maxFloored = Math.floor(max);
+//   return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled); // The maximum is inclusive and the minimum is inclusive
+// }
 
 //oppgave 16 
 
@@ -76,4 +76,21 @@ function getRandomIntInclusive(min, max) {
 // }
 
 
+//oppgave 17 
 
+const bilde = document.querySelector("#bilder");
+
+let arrayBilder = [
+    "bilder/geirludvik.jpg",
+    "IMG_8239.jpeg",
+    "mann.png",
+    "roblox.png",
+];
+
+let bildeIndex = 0; 
+bilde.src ="bilder/" + arrayBilder[bildeIndex];// "bilder/" <-- Forteller at den må lete i en mappe med navn "bilder". arrayBilder[bildeIndex] forteller at vi skal gå inn i arrayen med navnet vi ga "arrayBilder", før vi skriver inn i [], skriver vi "bildeIndex", som vi har gitt verdien 0
+//det vil si at vi forteller at vi starter på bilde som er plasser på plass 0 
+
+const knappHoyre = document.querySelector("#right");
+
+knappHoyre.addEventListener("click", hoyre); //gjør knappen høyre
