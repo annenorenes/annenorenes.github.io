@@ -1,26 +1,33 @@
-//oppgave 13 førerkort 
+// oppgave 13 førerkort 
 
-// let alder = 23; 
+// let alder = prompt("Skriv inn alderen din");
+// alder = parseInt(alder);
+// let svar = "";
 
 // if (alder < 16){
-//     console.log("Du er for ung");
+//     svar = "Du er for ung";
 // }
 
 // else if (alder < 18) {
-//     console.log("Du har muligheten til å kjøre moped");
+//     svar = "Du er har muligheten til å kjøre moped";
 // }
 
 // else if (alder < 21) {
-//     console.log("Du har mulighet til å kjøre moped og bil");
+//     svar = "Du har mulighet til å kjøre moped og bil"
 // }
 
 // else if (alder < 24) {
-//     console.log("Du har muligheten til å kjøre moped, bil og lastebil");
+// svar = "Du har muligheten til å kjøre moped, bil og lastebil";
 // }
 
 // else {
-//     console.log("Du kan kjøre moped, bil, lastebil og buss");
+//     svar = "Du kan kjøre moped, bil, lastebil og buss"
 // }
+
+// document.getElementById("alder").innerText = svar;
+
+// let nyParagraf = document.createElement("h1");
+
 
 //oppgave 14 gjettespill 
 //versjon 1 
@@ -58,39 +65,72 @@
 //   return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled); // The maximum is inclusive and the minimum is inclusive
 // }
 
-//oppgave 16 
+// oppgave 16 
 
-// let Tallarray = [];
+let array =[];
+let over5 = 0;
+let verdi4 = 0;
+let sum = 0; 
+let high = -10;
+let low = Infinity;
 
-// for (let i = 0; i < 200; i++) {
-//     console.log(i)
-//     Tallarray.push(Math.floor(Math.random()*10)+1); //This example returns a random number between the specified values. The returned value is no lower than (and may possibly equal) min, and is less than (and not equal)
-// }
+for (let i = 1; i < 201; i++){
+    let tilfeldigTall = Math.floor(Math.random()* 10)+1; //her generer vi et tilfeldig helltall mellom 10 og i. Jeg mp se nermere på hav er Math.floor, og hvordan det so kommer etter fungerer
+    array.push(tilfeldigTall); //legger til tilfeldig tall
+    // console.log(tilfeldigTall);
+}
 
-// let over5 = 0;
+console.log(array);
 
-// for (let i = 0; i < Tallarray; i++) {
-//     if (Tallarray[i] > 5){
-//         over5++;
-//     }
-// }
+for (let i = 0; i < array.length; i++){ //
+    if (array[i]>=5) //siden i er definert som noe mindre enn array.lenght
+    over5++;
+
+    if (array[i] == 4)
+    verdi4++;
+
+    sum += array[i] //sum = sum + array[i]
+
+    if (array[i]>high){
+        high = array[i];
+    }
+
+    if (array [i] < low){
+        low = array[i];    
+    }
+
+}
+
+let gjennomsnitt = sum/array.length;
+
+
+console.log(verdi4);
+console.log(over5);
+console.log(sum);
+console.log(gjennomsnitt);
+
+//med dette teller den fra 0 til 199. Jeg endrer litt på den 
+
+
+
+
 
 
 //oppgave 17 
 
-const bilde = document.querySelector("#bilder");
+// const bilde = document.querySelector("#bilder");
 
-let arrayBilder = [
-    "bilder/geirludvik.jpg",
-    "IMG_8239.jpeg",
-    "mann.png",
-    "roblox.png",
-];
+// let arrayBilder = [
+//     "bilder/geirludvik.jpg",
+//     "IMG_8239.jpeg",
+//     "mann.png",
+//     "roblox.png",
+// ];
 
-let bildeIndex = 0; 
-bilde.src ="bilder/" + arrayBilder[bildeIndex];// "bilder/" <-- Forteller at den må lete i en mappe med navn "bilder". arrayBilder[bildeIndex] forteller at vi skal gå inn i arrayen med navnet vi ga "arrayBilder", før vi skriver inn i [], skriver vi "bildeIndex", som vi har gitt verdien 0
-//det vil si at vi forteller at vi starter på bilde som er plasser på plass 0 
+// let bildeIndex = 0; 
+// bilde.src ="bilder/" + arrayBilder[bildeIndex];// "bilder/" <-- Forteller at den må lete i en mappe med navn "bilder". arrayBilder[bildeIndex] forteller at vi skal gå inn i arrayen med navnet vi ga "arrayBilder", før vi skriver inn i [], skriver vi "bildeIndex", som vi har gitt verdien 0
+// //det vil si at vi forteller at vi starter på bilde som er plasser på plass 0 
 
-const knappHoyre = document.querySelector("#right");
+// const knappHoyre = document.querySelector("#right");
 
-knappHoyre.addEventListener("click", hoyre); //gjør knappen høyre
+// knappHoyre.addEventListener("click", hoyre); //gjør knappen høyre

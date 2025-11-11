@@ -43,3 +43,9 @@ console.log(x);
 setTimeout(function() {
     console.log("Dette er en callback-funksjon");
 }, 1000);
+
+//funksjonen kjører når vi trykker på en knapp
+
+function Button() {
+    alert("Hei du trykker på knappen");
+}
