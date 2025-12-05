@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Forms øving1 </title>
+</head>
+<body>
+<form id="skjema"> <!--Oppretter først en id for alle inne i skjemaet-->
+<label for="name">Navn:</label> <!--I label skriver vi hva det er som skal bli skrevet inn -->
+<input type="text" id="name" name="name" placeholder="Skriv inn navnet ditt her" required></input> <!--Placeholder er det som står før du starter å skrive, som en guide. required- gjør at brukeren må fylle ut feltet før skjemaet kan sendes inn -->
+
+<label for="email">Email:</label>
+<input type="text" id="email" name="email" placeholder="Skriv inn mailen din her" required></input>
+
+<label for="password">Passord:</label>
+<input type="text" id="password" name="password" placeholder="Skriv inn ditt passord her" required></input>
+
+
+<label for="kjonn">Kjønn:</label>
+<input type="radio" id="mann" name="kjonn" value="mann" required></input>
+<label for="mann">Mann:</label>
+<input type="radio" id="kvinne" name="kjonn" value="kvinne"></input>
+<label for="kvinne">Kvinne:</label>
+
+<label for="interesser">interesser</label>
+<select id="interesser" name="interesser" multiple>
+    <option value="sport">Sport</option>
+    <option value="kunst">Kunst</option>
+    <option value="musik">Musik</option>
+</select>
+</form>
+
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
