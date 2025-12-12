@@ -8,13 +8,37 @@
 </head>
 
 <body>
-    <div id="score">Poeng: 0</div>
-    <div id="buttons">
-    <button id="pauseBtn">Pause</button>
-    <button id="restartBtn">Start på nytt</button>
+   <header class="hud">
+    <div id="leftHud">
+      <div id="score">Antall gaver samlet: 0</div>
+      <div id="timer">Tid: 30</div>
     </div>
 
-    <canvas id="gameCanvas" width="500" height="600"></canvas>
+    <div id="pointLegend">
+        <small>Verdi:</small>
+        <div class="legend-item red">1 P</div>
+        <div class="legend-item blue">5 P</div>
+        <div class="legend-item green">10 P</div>
+      </div>
+
+    <div id="rightHud">
+      <div id="buttons">
+        <button id="pauseBtn">Pause</button>
+        <button id="restartBtn">Start på nytt</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="snow-container"></div> 
+
+  <main class="game-area">
+    <canvas id="gameCanvas" width="500" height="600" aria-label="Catch the Gift spill"></canvas>
+  </main>
+
+  <footer class="notes">
+    <small>Bruk piltastene eller flytt musen for å styre kurven. Se opp for Goofy Gaver!</small>
+  </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
