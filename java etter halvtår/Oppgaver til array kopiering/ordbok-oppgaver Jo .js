@@ -149,9 +149,8 @@ console.log("\n--- OPPGAVE 4 ---");
 console.log("Oppgave: Lag array med ord og antall ordklasser");
 // Skriv koden din her:
 
-const ord = ordbok.map(ord => ord.ord);
-const antallOrdklasser = ordbok.map(klasser => klasser.ordklasser);
-console.log()
+const ord = ordbok.map(ordene => ordene.ord, ordene.ordklasser.length);
+
 
 
 // =====================================
@@ -169,7 +168,8 @@ console.log("Oppgave: Beregn totalt antall ordklasser");
 // Beregn gjennomsnittlig popularitet for alle ord
 console.log("\n--- OPPGAVE 6 ---");
 console.log("Oppgave: Beregn gjennomsnittlig popularitet");
-// Skriv koden din her:
+
+
 
 
 // =====================================
