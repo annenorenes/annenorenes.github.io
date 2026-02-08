@@ -8,7 +8,7 @@ skjema.addEventListener("submit", async function(event){ //jeg gjør slik at hel
 
     const ord = document.getElementById("ord").value;
 
-    const response = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${ord}`); //fetch sender en foresspørsel til APIen, og den svarer med et "promis". Await kommandoen gjør at koden venter slik at js kan hente ut data
+    const response = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/` + ord); //fetch sender en foresspørsel til APIen, og den svarer med et "promis". Await kommandoen gjør at koden venter slik at js kan hente ut data
     const data = await response.json();
         
     const definisjonDiv = document.querySelector("#definisjon");

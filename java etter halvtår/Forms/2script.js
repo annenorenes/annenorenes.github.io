@@ -5,9 +5,9 @@ skjema.addEventListener("submit", function(event){ //forteller at når vi trykke
 
    const name = document.getElementById("name").value;
    const age = document.getElementById("age").value;
-   const klass = document.getElementById("class").value;
 
-   const fagSelect = document.getElementById("class");
+   const fag = document.getElementById('fag');
+   const fagSelect = Array.from(fag.selectedOptions).map(option => option.value);
 
    const kjonn = document.querySelector('input[name="kjonn"]:checked').value;
 });

@@ -1,0 +1,6 @@
+[
+  { "navn": "Anna", "alder": 17, "interesse": "håndball" },
+  { "navn": "Jonas", "alder": 18, "interesse": "fotball" },
+  { "navn": "Sara", "alder": 17, "interesse": "fotball" },
+  { "navn": "Emil", "alder": 19, "interesse": "håndball" }
+]

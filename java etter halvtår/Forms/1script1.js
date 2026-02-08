@@ -7,6 +7,7 @@ skjerm.addEventListener = ("submit", function(event) {
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
     const kjonn = document.querySelector('input[name="kjonn"]:checked').value;
+    
     const interesserSelect = document.getElementById('interesser');
     const interesser = Array.from(interesserSelect.selectedOptions).map(option => option.value);
 
