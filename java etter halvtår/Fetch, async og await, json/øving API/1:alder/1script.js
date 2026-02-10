@@ -3,12 +3,12 @@
 
 const skjema = document.getElementById("skjema");
 
-    skjema.addEventListener("submit", async function(info) {
+    skjema.addEventListener("submit", async function (info) {
         info.preventDefault();
     
         const response = await fetch('1data.json');
         const data = await response.json();
-        console.log(data); 
+        console.log(data); //printer ut hele arrayen
 
     
     const alder = Number(document.querySelector("#alder").value); //alder er inputen som bruker skriver inn
@@ -21,9 +21,12 @@ const skjema = document.getElementById("skjema");
     //person.navn
     printUt.forEach(person => {
     let p = document.createElement("p");
-    p.innerText = person.navn;
+    p.innerText = person.navn; //printer "verdien" til navn, eller navnet til personen. person.alder printer alderen til personen
     utskrift.appendChild(p);
     });
+
+
+    
 
 
 })

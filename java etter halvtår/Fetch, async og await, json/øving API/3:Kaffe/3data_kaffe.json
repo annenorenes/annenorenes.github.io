@@ -1,0 +1,15 @@
+
+[
+    {
+        "title": "Black Coffee",
+        "description": "Svart kaffe er enkel og god.",
+        "ingredients": ["Coffee", "Water"],
+        "id": 1
+    },
+    {
+        "title": "Latte",
+        "description": "En melkebasert kaffeklassiker.",
+        "ingredients": ["Coffee", "Milk", "Foam"],
+        "id": 2
+    }
+]

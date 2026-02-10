@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Harry Potter",
+    "house": "Gryffindor",
+    "actor": "Daniel Radcliffe",
+    "image": "https://hp-api.onrender.com/images/harry.jpg"
+  },
+  {
+    "name": "Hermione Granger",
+    "house": "Gryffindor",
+    "actor": "Emma Watson",
+    "image": "https://hp-api.onrender.com/images/hermione.jpg"
+  },
+  {
+    "name": "Ron Weasley",
+    "house": "Gryffindor",
+    "actor": "Rupert Grint",
+    "image": "https://hp-api.onrender.com/images/ron.jpg"
+  },
+  {
+    "name": "Draco Malfoy",
+    "house": "Slytherin",
+    "actor": "Tom Felton",
+    "image": "https://hp-api.onrender.com/images/draco.jpg"
+  },
+  {
+    "name": "Luna Lovegood",
+    "house": "Ravenclaw",
+    "actor": "Evanna Lynch",
+    "image": "https://hp-api.onrender.com/images/luna.jpg"
+  },
+  {
+    "name": "Cedric Diggory",
+    "house": "Hufflepuff",
+    "actor": "Robert Pattinson",
+    "image": "https://hp-api.onrender.com/images/cedric.png"
+  }
+]
