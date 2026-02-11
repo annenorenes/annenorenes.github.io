@@ -1,0 +1,23 @@
+[
+  {
+    "rett": "Pannekaker",
+    "info": {
+      "tid": "20 min",
+      "ingredienser": ["Melk", "Mel", "Egg"]
+    }
+  },
+  {
+    "rett": "Taco",
+    "info": {
+      "tid": "15 min",
+      "ingredienser": ["Kjøttdeig", "Løk", "Tacokrydder"]
+    }
+  },
+  {
+    "rett": "Pasta",
+    "info": {
+      "tid": "10 min",
+      "ingredienser": ["Spagetti", "Vann", "Salt"]
+    }
+  }
+]

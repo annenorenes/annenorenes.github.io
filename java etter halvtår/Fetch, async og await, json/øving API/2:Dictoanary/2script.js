@@ -21,7 +21,6 @@ const skjema = document.getElementById("skjema");
             let p = document.createElement("p");
             p.innerText = def.definition;
             utskrift.appendChild(p);
-
             console.log(def);
 
             })
