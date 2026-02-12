@@ -13,19 +13,23 @@ skjema.addEventListener("submit", async function (info) {
     const utskrift = document.getElementById("utskrift");
     utskrift.innerHTML = "";
 
-    const nyArray = data.filter(def => def.full_name === sok)
+    // const nyArray = data.filter(def => def.full_name === sok)
 
+for (let i = 0; i < data.hogwarts_houses.length; i++){
+    for (let j = 0; j < data.hogwarts_houses[i].members.length; j++){
+        let member =  data.hogwarts_houses[i].members[j];
 
-    nyArray.hogwarts_houses.forEach(house => { //på grunn av at data ikke er en array, men et objekt, må vi hoppe dierkte til neste, som vi ser er en array
-        house.members.forEach(medlem => {
+        if (member.bio.full_name.toLowerCase() === sok){ //"hvis navnet du søker på er lik en avskuespillerene.."
+            let p = document.createElement("p");
+            p.innerText = member.bio.actor; //så skriv ut skuespilleren med den rollen
+            utskrift.appendChild(p);
+        }
 
-                let p = document.createElement("p");
-                p.innerText = medlem.bio.actor;
-                utskrift.appendChild(p);
-            })
+    }
+}
+
+});
             
             
             
-        })
-        
-    });
+

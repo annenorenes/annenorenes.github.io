@@ -6,9 +6,9 @@ const skjema = document.getElementById("skjema");
     skjema.addEventListener("submit", async function (info) {
         info.preventDefault();
     
-        const response = await fetch('1data.json');
-        const data = await response.json();
-        console.log(data); //printer ut hele arrayen
+    const response = await fetch('1data.json');
+    const data = await response.json();
+    console.log(data); //printer ut hele arrayen
 
     
     const alder = Number(document.querySelector("#alder").value); //alder er inputen som bruker skriver inn

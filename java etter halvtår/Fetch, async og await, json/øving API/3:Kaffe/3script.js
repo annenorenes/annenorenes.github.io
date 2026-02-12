@@ -8,12 +8,15 @@ async function kaffe(info) {
     const utskrift = document.querySelector("#utskrift");
     utskrift.innerHTML = "";
 
-    data.forEach(kaffeType => {
-        let li = document.createElement("li");
-        li.innerText = kaffeType.description; //det ordet du skriver inn etter kaffeType blir det vi kaller på
-        utskrift.appendChild(li);
+    for (let i = 0; i < data.length; i++){
 
-    });
+        let kaffeType = data[i].title;
+
+        
+        let li = document.createElement("li");
+        li.innerText = kaffeType;
+        utskrift.appendChild(li);
+    }
 
 }
 
