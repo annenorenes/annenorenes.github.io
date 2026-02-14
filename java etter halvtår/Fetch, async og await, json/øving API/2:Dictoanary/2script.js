@@ -21,7 +21,7 @@ const skjema = document.getElementById("skjema");
                 let def = data[i].meanings[j].definitions[k].definition;
 
                 let p = document.createElement("p");
-                p.innerText = definitions;
+                p.innerText = def;
                 utskrift.appendChild(p);
             }
         }
