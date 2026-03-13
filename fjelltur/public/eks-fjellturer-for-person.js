@@ -15,3 +15,32 @@ async function hentPersoner() {
     }
 }
 document.addEventListener('DOMContentLoaded', hentPersoner);
+
+//-----
+
+// Når en person er valgt, henter og viser alle fjellturene til den personen
+document.getElementById('personDropdown').addEventListener('change', async function() {
+    const brukernavn = this.value;
+    console.log(`Valgt person: ${brukernavn}`); //den du trykker på vil bli kalt brukernavn
+    if (brukernavn) {
+        const response = await fetch(`/api/fjellturer/${encodeURIComponent(brukernavn)}`);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const fjellturer = await response.json();
+        
+        // Sjekker at vi har fått data tilbake, og viser det i konsollen
+        console.log(fjellturer); // Her kan du erstatte dette med kode for å vise fjellturene i UI
+
+        // Skriver turene til HTML
+        // Først viser vi en overskrift med hvilken person vi viser turene for
+        const turerDiv = document.getElementById('fjellturerContainer'); 
+        turerDiv.innerHTML = `<h2>Fjellturer for ${brukernavn}</h2>`; //skriver i htmlen, ved fjellturerContainer diven, navnet på brukernavnet som trykket
+        // Så viser vi en liste med alle fjellturene
+        const ul = document.createElement('ul');
+        for (const tur of fjellturer) { //kaller hver element i arrayen fjellturer, tur
+            const li = document.createElement('li');
+            li.textContent = tur.fjellnavn; //sier fjellnavnet til hver av turene
+            ul.appendChild(li); //sender ut punktene
+        }
+        turerDiv.appendChild(ul); //sender ut listen
+    }
+});
